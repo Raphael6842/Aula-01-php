@@ -65,6 +65,10 @@ echo "<br><br>";
 Zerrai Mundo nasceu em <data>, mora no bairro tal, na rua tal, N° x
 */
 
+//com interpretação 
 $mensagem = "$soma nasceu em {$pessoa['data']}, mora no bairro {$pessoa['endereco'][1]}, na rua {$pessoa['endereco'][0]}, N° {$pessoa['endereco'][2]}";
+
+//com concatenação
+$mensagem = $nome . 'nasce em' . $pessoa["data"] . ', mora no bairro ' . $pessoa["endereco"][1] . ', na rua ' . $pessoa["endereco"][0] . ', N° ' . $pessoa["endereco"][0]; 
 
 echo $mensagem;
